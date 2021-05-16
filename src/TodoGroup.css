@@ -1,6 +1,4 @@
 .groupWrapper {
-    float: left;
-    width: 21%;
     padding: 10px 0;
     margin: 15px;
     background: #F9F3E5;
@@ -10,7 +8,7 @@
     border-radius: 24px;
 }
 
-.groupWrapper .groupHeader {
+.groupWrapper .groupHeader .title{
     font-weight: bold;
     font-size: 20px;
     margin-left: 16px;
@@ -19,17 +17,25 @@
     color: #33322E;
 }
 
-.groupWrapper .line {
+.groupWrapper .groupHeader .line {
     background: #F9F3E5;
     border: 2px solid #33322E;
     box-sizing: border-box;
 }
 
-.groupWrapper .groupInputWrapper {
+.groupWrapper .groupBody {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.groupWrapper .groupBody .groupInputWrapper {
+    display: flex;
+    padding: 15px;
     text-align: center;
 }
-.groupWrapper .groupInputWrapper input {
-    margin: 10px 15px;
+.groupWrapper .groupBody .groupInputWrapper input {
+    flex: 1;
     padding: 10px;
     border: 2px dashed #a1a1a1;
     background: #F9F3E5;

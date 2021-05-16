@@ -13,9 +13,20 @@ class GroupList extends Component {
     }
 
     render() {
+        const items = this.props.items;
+        const listItems = items.map((items, index) => 
+            <li key={index}>
+                <div className="groupItemWrapper">
+                    <img src={BulletNormal} alt="normal todo" />
+                    <span>{items.text}</span>
+                </div>
+            </li>
+        );
+
         return (
             <ul className="groupListWrapper">
-                <li>
+                {listItems}
+                {/* <li>
                     <div className="groupItemWrapper">
                         <img src={BulletNormal} alt="normal todo" />
                         <span >This is task.aaa aaaaaaaa aaaa aaa</span>
@@ -26,7 +37,7 @@ class GroupList extends Component {
                         <img src={BulletNormal} alt="normal todo" />
                         <span >This is task.</span>
                     </div>
-                </li>
+                </li> */}
             </ul>
         );
     }

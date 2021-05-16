@@ -1,6 +1,7 @@
 .groupListWrapper {
-    margin: 12px 15px;
+    margin: 0px 15px;
     padding-left: 0;
+    flex: 1;
 }
 
 .groupListWrapper li {

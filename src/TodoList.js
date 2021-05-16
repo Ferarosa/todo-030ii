@@ -19,15 +19,31 @@ class TodoList extends Component {
                     <span className="title">Weekly TodoList</span>
                     <span className="line"></span>
                 </div>
-                <div className="todoGroupWrapper">
-                    <TodoGroup name="Monday" />
-                    <TodoGroup name="Tuesday" />
-                    <TodoGroup name="Wednesday" />
-                    <TodoGroup name="Thursday" />
-                    <TodoGroup name="Friday" />
-                    <TodoGroup name="Saturday" />
-                    <TodoGroup name="Sunday" />
-                    <TodoGroup name="Notes" />
+                <div className="todoGrid">
+                    <div className="todoGridItem">
+                        <TodoGroup name="Monday" />
+                    </div>
+                    <div className="todoGridItem">
+                        <TodoGroup name="Tuesday" />
+                    </div>
+                    <div className="todoGridItem">
+                        <TodoGroup name="Wednesday" />
+                    </div>
+                    <div className="todoGridItem">
+                        <TodoGroup name="Thursday" />
+                    </div>
+                    <div className="todoGridItem">
+                        <TodoGroup name="Friday" />
+                    </div>
+                    <div className="todoGridItem">
+                        <TodoGroup name="Saturday" />
+                    </div>
+                    <div className="todoGridItem">
+                        <TodoGroup name="Sunday" />
+                    </div>
+                    <div className="todoGridItem">
+                        <TodoGroup name="Notes" />
+                    </div>
                 </div>
             </div>
         );
