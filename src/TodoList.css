@@ -13,7 +13,7 @@
     border: 4px solid #33322E;
     box-sizing: border-box;
     border-radius: 36px;
-    width: 20%; 
+    flex: 1;
 }
 
 .todoListWrapper .todoListHeader .title {
